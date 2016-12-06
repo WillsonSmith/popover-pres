@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>reveal.js</title>
+  <title>stupid sexy popovers</title>
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/white.css">
@@ -115,22 +115,60 @@
           <h2>almost</h2>
         </section>
         <section>
-          <h2>almost?<h2>
+          <h2>almost?</h2>
         </section>
         <section>
           <p>VoiceOver on macOS, sure</p>
           <p>VoiceOver on iOS, well...</p>
         </section>
         <section>
+          <h2>naw</h2>
+        </section>
+        <section>
           <h2>why tho?</h2>
         </section>
         <section>
+          <img src="i/tabindex.jpg">
+        </section>
+        <section>
+          <h2>tabindex?</h2>
           <code data-markdown>
             ```
               &lt;div id="node" tabindex="0"&gt;
               document.getElementById('node').focus();
             ```
           </code>
+        </section>
+        <section data-markdown>
+          ### iOS prefers spaces
+          > iOS voiceover controls do not "tab"
+        </section>
+        <section>
+          <h2>how did you solve it?</h2>
+        </section>
+        <section>
+          <h2>i didn't</h2>
+        </section>
+        <section>
+          <h2>a modal is a section</h2>
+        </section>
+        <section data-markdown>
+          ## no more focus
+            ```
+              &lt;a href="#node" title="modal"&gt;activate&lt;/a&gt;
+              &lt;div id="node"&gt;
+            ```
+            ~~document.getElementById('node').focus();~~
+        </section>
+        <section>
+          <h2>still some problems</h2>
+          <p>all popovers are in the same container</p>
+        </section>
+        <section data-markdown>
+          ## maybe?
+          ```
+          &lt;div aria-hidden="true"&gt;
+          ```
         </section>
       </div>
     </div>
